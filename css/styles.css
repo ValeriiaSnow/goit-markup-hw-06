@@ -465,11 +465,12 @@ img{
     border-radius: 4px;
     text-align: center;
     padding: 10px 32px;
+    transition: background-color 250ms var(--type-of-show), border 250ms var(--type-of-show);
 }
 
 .hero .button:hover,
 .hero .button:focus {
-    background-color: var(--accent-color);
+    background-color: #188CE8;
     border: none;
 }
 

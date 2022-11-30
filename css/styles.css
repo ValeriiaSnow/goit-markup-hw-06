@@ -363,6 +363,8 @@ img{
     padding-bottom:15px;
     margin-right: 12px;
     color: #FFFFFF;
+    font-size: 100%;
+    line-height: 1.15;
 }
 
 .subscribe-input::placeholder{

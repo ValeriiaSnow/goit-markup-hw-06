@@ -270,6 +270,7 @@ img{
 
 .join{
     padding: 0;
+    margin-right: 93px;
 }
 
 .contacts{
@@ -335,6 +336,76 @@ img{
 .join-link{
     transition: background-color 250ms var(--type-of-show),
     fill 250ms var(--type-of-show);
+}
+
+.subscribe-title{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.subscribe-form{
+    display: flex;
+}
+
+.subscribe-input{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    width: 358px;
+    padding-top: 15px;
+    padding-left:16px;
+    padding-bottom:15px;
+    margin-right: 12px;
+    color: #FFFFFF;
+}
+
+.subscribe-input::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-button{
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    /* align-items: center; */
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    /* padding: 10px 28px; */
+    width: 200px;
+    height: 50px;
+    padding-right: 28px;
+    position: relative;
+    transition: background-color 250ms var(--type-of-show);
+}
+
+.subscribe-button-svg{
+    right: 28px;
+    position: absolute;
+    top: 13px;
+    width: 24px;
+    height: 24px;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+    background-color: #188CE8;
 }
 
 /* 3 ------------------------------ MAIN = Studio */
@@ -767,10 +838,10 @@ where 60px = 2(amount of margins = n-1) * 30px(margins)
     height: 100%;
 }
 
-.type-work-photo-item:hover .type-work-photo-description{
+.type-work-photo-item:hover .type-work-photo-description,
+.type-work-photo-item:focus .type-work-photo-description{
     transform: translateY(0);
 }
-
 
 
 /* ------------------------ MODAL ---------------*/
